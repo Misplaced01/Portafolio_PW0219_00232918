@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Email sign up</h1>
+    <form action="ej3.html">
+      <fieldset>
+        <legend>
+          Personal information
+        </legend>
+        <label for="names">Names:</label>
+        <input type="text" placeholder="Eduardo" />
+        <input type="text" placeholder="Antonio" />
+        <br /><br />
+        <label for="lastnames">Lastnames:</label>
+        <input type="text" placeholder="Aguilar" />
+        <input type="text" placeholder="Castellon" />
+        <br /><br />
+        <label for="Birthday">Birthday:</label>
+        <input type="date" />
+        <br /><br />
+        <label>Gender:</label>
+        <input type="radio" name="gender1" value="F" />F
+        <input type="radio" name="gender1" value="M" />M
+        <input type="radio" name="gender1" value="Other" />Other:
+        <input type="text" name="other" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>
+          Sign Up Information:
+        </legend>
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="00000000@uca.edu.sv" />
+        <br /><br />
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Password" />
+        <br /><br />
+        <label for="verifypassword">Verify Password:</label>
+        <input type="password" placeholder="Password" />
+      </fieldset>
+      <br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset Fields" />
+    </form>
+  </body>
+</html>
