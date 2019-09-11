@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Livvic:400,700i|Quicksand:400,700&display=swap');
+$bg: url("../img/stardust.png");
+$ff1: 'Quicksand';
+$ff2: 'Livvic';
+
+@import "variables";
+
+@mixin flexWrap() {
+    display: flex;
+
+    flex-flow: row wrap;
+}
+
+@mixin flexCenter() {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+    flex-direction: column
+}
+
+@mixin flexLogos($padding){
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: $padding; 
+}
+
+@mixin displayLogos($size){
+    display: flex;
+    width: $size;
+    height: $size;
+    border-radius: 100%;
+}
+
+/*********************************************************/
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: $bg;
+}
+
+.boton button {
+    font-family: $ff1;
+    font-weight: 700;
+    color: $colorClaro;
+    border: $colorBorde;
+    background-color: $colorFondo;
+    margin-left: 5px;
+    padding: $standar_padding; 
+}
+
+/*.boton>button {
+    border-radius: $radio;
+}*/
+
+.boton {
+    @include flexWrap();
+    justify-content: flex-end;
+    padding: $standar_padding;
+    & button:hover {
+        background-color: $colorBoton;
+    }
+    &>button {
+        border-radius: $radio;
+    }
+}
+
+.label {
+    @include flexCenter();
+    font-family: $ff2;
+    font-weight: 700;
+    color: $colorAzul;
+}
+
+h1 {
+    @include flexWrap();
+    background-color: $colorGris;
+    letter-spacing: $spacing; 
+    background-color: $colorTitulo;
+    text-transform: uppercase;
+    font-weight: 700; 
+}
+
+hr {
+    @include flexWrap();
+    width: 400px;
+    border: $standar_border;
+    color: $colorTitulo;
+    border-radius: 50%;
+}
+
+.logos {
+    @include flexLogos(10px);
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+img {
+    @include displayLogos(60px);
+    border: 1px;
+    &:hover {
+        border: $colorBorde solid;
+    }
+}
+
+.footer {
+    @include flexWrap();
+    justify-content: space-between;
+    margin-top: 160px;
+
+    & button {
+        @include flexWrap();
+        font-family: $ff1;
+        font-weight: 700;
+        color: $colorClaro;
+        border: $colorBorde;
+        background-color: $colorGris;
+        margin-left: 5px;
+        
+        &:hover {
+            background-color: $colorLlanta;
+        }
+    }
+}
+    

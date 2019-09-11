@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Livvic:400,700i|Quicksand:400,700&display=swap");
+/*********************************************************/
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-image: url("../img/stardust.png");
+}
+
+.boton button {
+  font-family: "Quicksand";
+  font-weight: 700;
+  color: #f8f5f5ec;
+  border: #0e0d0dec;
+  background-color: #004d40;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+/*.boton>button {
+    border-radius: $radio;
+}*/
+.boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 5px;
+}
+
+.boton button:hover {
+  background-color: #39796b;
+}
+
+.boton > button {
+  border-radius: 10%;
+}
+
+.label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Livvic";
+  font-weight: 700;
+  color: #1b1ba0;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background-color: #4f5b62;
+  letter-spacing: 5px;
+  background-color: rgba(248, 245, 245, 0.3);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 400px;
+  border: 2px solid rgba(248, 245, 245, 0.3);
+  color: rgba(248, 245, 245, 0.3);
+  border-radius: 50%;
+}
+
+.logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 10px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px;
+}
+
+img:hover {
+  border: #0e0d0dec solid;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 160px;
+}
+
+.footer button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  font-family: "Quicksand";
+  font-weight: 700;
+  color: #f8f5f5ec;
+  border: #0e0d0dec;
+  background-color: #4f5b62;
+  margin-left: 5px;
+}
+
+.footer button:hover {
+  background-color: #263238;
+}
+/*# sourceMappingURL=style.css.map */
