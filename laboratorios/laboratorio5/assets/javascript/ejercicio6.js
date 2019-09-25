@@ -2,9 +2,9 @@ console.log("---------------------------------------Ejercico 6------------------
 
 var ascendente = function(x){
     for(let i=0; i<x.length; i++){
-        menor= x[i];
+        menor= x[i];//un arreglo.
         for(let j=0; j<x.length; j++){
-            if(menor < x[j]){
+            if(menor < x[j]){//el arreglo menor con index j
                 menor = x[j];
                 var aux = x[i];
                 x[i] = x[j];
