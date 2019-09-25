@@ -1,4 +1,5 @@
 console.log("------------------------------------Ejercicio 2--------------------------------------")
+var numeros = [10, 20, 48, 2, 100, 78, 30, 9, 4, 7];
 var r=0
 var promedio = function(x){
     for(let i=0; i< x.length; i++){
@@ -11,5 +12,4 @@ var promedio = function(x){
     }
     r=0;
 }
-var num = [10, 20, 48, 2, 100, 78, 30, 9, 4, 7];
-promedio(num);
+promedio(numeros);
