@@ -1,3 +1,5 @@
+console.log("------------------------------------Ejercicio 5--------------------------------------")
+
 function palindroma(palabra){
     var isPalindroma = true;
     var original = palabra.split("");

@@ -1,3 +1,5 @@
+console.log("---------------------------------------Ejercicio 1------------------------------")
+
 var tipo = function(x){
 
     var tiposArr = []//creando un arreglo dentro de la funcion
